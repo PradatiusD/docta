@@ -2,13 +2,13 @@
 /* @var $this DashboardController */
 
 $this->breadcrumbs=array(
-	'Dashboard',
+  'Dashboard',
 );
 ?>
 <h1><?php echo $this->id . '/' . $this->action->id; ?></h1>
  <div class="row">
     <div class="large-12 columns">
-	<table>
+  <table>
               <thead>
           <tr>
             <th colspan="5">Your Queue</th>
@@ -26,31 +26,31 @@ $this->breadcrumbs=array(
       <td><a href="#">(305)555-4444</a></td>
       <td>April 13th</td>
       <td>12:30pm</td>
-      <td><a href="#">Call to click</a></td>
+      <td><a href="#" class="button small">Click to call</a></td>
      </tr>
      <tr>
       <td>Michealangelo</td>
       <td><a href="#">(305)555-4444</a></td>
       <td>April 13th</td>
       <td>12:30pm</td>
-      <td><a href="#">Call to click</a></td>
+      <td><a href="#" class="button small">Click to call</a></td>
      </tr>
      <tr>
       <td>Michealangelo</td>
       <td><a href="#">(305)555-4444</a></td>
       <td>April 13th</td>
       <td>12:30pm</td>
-      <td><a href="#">Call to click</a></td>
+      <td><a href="#" class="button small">Click to call</a></td>
      </tr>
      <tr>
       <td>Michealangelo</td>
       <td><a href="#">(305)555-4444</a></td>
       <td>April 13th</td>
       <td>12:30pm</td>
-      <td><a href="#">Call to click</a></td>
+      <td><a href="#" class="button small">Click to call</a></td>
      </tr>
     </tbody>
-	</table>
+  </table>
       <hr>
   <!-- Second Band (Image Left with Text) -->
   <div class="row">
@@ -60,7 +60,7 @@ $this->breadcrumbs=array(
           <thead>
           <tr>
             <th colspan="2">Your Appointments</th>
-            <th colspan="2"><a href="JavaScript:void(0)" data-reveal-id="newAppt">Add Patient</a></th>
+            <th colspan="2"><a href="JavaScript:void(0)" data-reveal-id="newAppt">Add Appointment</a></th>
           </tr>
         </thead>
     </td>
@@ -164,6 +164,6 @@ $this->breadcrumbs=array(
   <a class="close-reveal-modal">&#215;</a>
 </div>
 <p>
-	You may change the content of this page by modifying
-	the file <tt><?php echo __FILE__; ?></tt>.
+  You may change the content of this page by modifying
+  the file <tt><?php echo __FILE__; ?></tt>.
 </p>
