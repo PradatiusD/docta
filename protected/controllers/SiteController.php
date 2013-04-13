@@ -93,7 +93,8 @@ class SiteController extends Controller
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
 			{
-				$this->redirect('/dashboard/index');
+				$url=$this->createUrl('/dashboard/index');		
+				$this->redirect($url);
 			}
 				//$this->redirect(Yii::app()->user->returnUrl);
 		}
