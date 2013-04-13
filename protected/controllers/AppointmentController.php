@@ -138,13 +138,18 @@ class AppointmentController extends Controller
 
 	public function actionNotify()
 	{
-		$twilioPath = Yii::getPathOfAlias('ext.twillio');
-		echo $twilioPath;
-		include($twilioPath . DIRECTORY_SEPARATOR . 'Twilio.php');
-		$sid = '';
+		$twilioPath = Yii::getPathOfAlias('ext.twilio');
+		include($twilioPath . DIRECTORY_SEPARATOR . '/Services/Twilio.php');
 		$token = '';
-		$client = new Services_Twilio($sid, $token);
-		var_dump($client);
+		$accountSid = 'AC7da2b11c3326620a43aae0fc90c5598c';
+		$authToken  = 'ab6eb122e59f4aefba78d5a71360a4b2';
+ 
 
+		$client = new Services_Twilio($sid, $token);
+ 		$message = $client->account->sms_messages->create("+15005550006", "+14108675309", "All in the game, yo", array());
+		echo $message->sid;
+		// $capability = new Services_Twilio_Capability($accountSid, $authToken);
+		//var_dump($capability);
+		//$capability->allowClientOutgoing('APxxxxxxxxxxxxxxx');
 	}
 }

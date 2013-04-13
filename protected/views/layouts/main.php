@@ -39,45 +39,9 @@
 
 	<div class="clear"></div>
 <div class="row">
-<<<<<<< HEAD
 		<div id="footer" class="small-6 small-centered columns">
 		Copyright &copy; <?php echo date('Y'); ?> by us dudes.  All Rights Reserved.
 	</div><!-- footer -->
-=======
-<!-- footer -->
-<<<<<<< HEAD
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/javascripts/vendor/jquery.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.alerts.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.clearing.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.cookie.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.dropdown.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.forms.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.joyride.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.magellan.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.orbit.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.placeholder.js"></script>
-  
-  <script src="javascripts/foundation/foundation.reveal.js"></script>
-  
-  <script src="javascripts/foundation/foundation.section.js"></script>
-  
-  <script src="javascripts/foundation/foundation.tooltips.js"></script>
-  
-  <script src="javascripts/foundation/foundation.topbar.js"></script>
-  
-=======
->>>>>>> First set of style changes
 </div>
 
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/javascripts/vendor/jquery.js"></script>
