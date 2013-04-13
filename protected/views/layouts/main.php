@@ -16,8 +16,8 @@
 
 <div class="container" id="page">
 
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+	<div id="header" class="row">
+		<div id="logo" class="three columns small-centered"><img src="http://placehold.it/200x100&text=logo" alt=""><span style="display:none"><?php echo CHtml::encode(Yii::app()->name); ?></span></div>
 	</div><!-- header -->
 
 	<div id="mainmenu">
