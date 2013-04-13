@@ -138,18 +138,31 @@ class AppointmentController extends Controller
 
 	public function actionNotify()
 	{
-		$twilioPath = Yii::getPathOfAlias('ext.twilio');
-		include($twilioPath . DIRECTORY_SEPARATOR . '/Services/Twilio.php');
-		$token = '';
 		$accountSid = 'AC7da2b11c3326620a43aae0fc90c5598c';
 		$authToken  = 'ab6eb122e59f4aefba78d5a71360a4b2';
- 
 
-		$client = new Services_Twilio($sid, $token);
- 		$message = $client->account->sms_messages->create("+15005550006", "+14108675309", "All in the game, yo", array());
-		echo $message->sid;
-		// $capability = new Services_Twilio_Capability($accountSid, $authToken);
-		//var_dump($capability);
-		//$capability->allowClientOutgoing('APxxxxxxxxxxxxxxx');
+
+		$accountSid = 'AC90f56453b72d3a777165b31b542cb3f0';
+		$authToken = 'db20849a3789ec65c94ea73d11e75ba6';
+		// Unload the Yii Base to prevent spl_autoload conflicts 
+		spl_autoload_unregister(array('YiiBase','autoload')); 
+		require "Services/Twilio.php";  
+	
+		$message = 'Hackathon ' . date('l jS \of F Y h:i:s A');	
+
+		$client = new Services_Twilio($accountSid, $authToken);
+		
+//$message = $client->account->sms_messages->create("+15005550006", "+14108675309", "All in the game, yo", array());
+	$message = $client->account->sms_messages->create("+19543562075", "+17542451861", $message, array());
+
+		echo '<pre>';
+		//var_dump($message->client->last_response);
+		echo '<div>'; 
+		echo '<strong>To :</strong> ' . $message->client->last_response->to . '<br>';
+		echo '<strong>From : </strong>' . $message->client->last_response->from . '<br>';
+		echo '<strong>Message : </strong>' . $message->client->last_response->body . '<br>';	
+		echo '<strong>Status :</strong> ' . $message->client->last_response->status . '<br>';
+		echo '</div>';
+		spl_autoload_register(array('YiiBase','autoload')); 
 	}
 }
