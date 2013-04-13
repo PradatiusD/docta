@@ -17,7 +17,7 @@
 <div class="row" id="page">
 
 	<div id="header">
-		<div id="logo" class="small-3 small-centered columns"><img src="http://placehold.it/200x100&text=logo" alt=""><span style="display:none"><?php echo CHtml::encode(Yii::app()->name); ?></span></div>
+		<div id="logo" class="small-3 small-centered columns"><img src="assets/logo.png" alt=""><span style="display:none"><?php echo CHtml::encode(Yii::app()->name); ?></span></div>
 	</div><!-- header -->
 
 	<div id="mainmenu" class="large-12 columns">
