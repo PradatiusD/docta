@@ -17,7 +17,7 @@
 <div class="row" id="page">
 
 	<div id="header">
-		<div id="logo" class="small-3 small-centered columns"><img src="/img/logo.png" alt=""><span style="display:none"><?php echo CHtml::encode(Yii::app()->name); ?></span></div>
+		<div id="logo" class="small-3 small-centered columns"><img src="<?php echo Yii::app()->request->baseUrl; ?>/img/logo.png" alt=""><span style="display:none"><?php echo CHtml::encode(Yii::app()->name); ?></span></div>
 	</div><!-- header -->
 
 	<div id="mainmenu" class="large-12 columns">
@@ -40,46 +40,12 @@
 	<div class="clear"></div>
 <div class="row">
 		<div id="footer" class="small-6 small-centered columns">
-		Copyright &copy; <?php echo date('Y'); ?> by us dudes.  All Rights Reserved. <?php echo Yii::powered(); ?>
+		Copyright &copy; <?php echo date('Y'); ?> by us dudes.  All Rights Reserved.
 	</div><!-- footer -->
-<<<<<<< HEAD
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/javascripts/vendor/jquery.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.alerts.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.clearing.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.cookie.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.dropdown.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.forms.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.joyride.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.magellan.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.orbit.js"></script>
-  
-  <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.placeholder.js"></script>
-  
-  <script src="javascripts/foundation/foundation.reveal.js"></script>
-  
-  <script src="javascripts/foundation/foundation.section.js"></script>
-  
-  <script src="javascripts/foundation/foundation.tooltips.js"></script>
-  
-  <script src="javascripts/foundation/foundation.topbar.js"></script>
-  
-=======
 </div>
 
-<script src="./javascripts/vendor/jquery.js"></script>
-  
-  <script src="javascripts/foundation/foundation.min.js"></script>
->>>>>>> Switched javascripts and made layout changes to main
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/javascripts/vendor/jquery.js"></script>
+  <script src="<?php echo Yii::app()->request->baseUrl; ?>/javascripts/foundation/foundation.min.js"></script>
   
   <script>
     $(document).foundation();
