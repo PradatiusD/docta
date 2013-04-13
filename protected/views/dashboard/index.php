@@ -11,7 +11,7 @@ $this->breadcrumbs=array(
   <table>
               <thead>
           <tr>
-            <th colspan="5">Your Queue</th>
+            <th colspan="6">Your Queue</th>
           </tr>
         </thead>
     <tbody>
@@ -22,32 +22,36 @@ $this->breadcrumbs=array(
         <td>Time</td>
       </tr>
      <tr>
-      <td>Michealangelo</td>
+      <td>Sam Adams</td>
       <td><a href="#">(305)555-4444</a></td>
       <td>April 13th</td>
       <td>12:30pm</td>
       <td><a href="#" class="button small">Click to call</a></td>
+      <td><a href="Javascript:void(0)" data-reveal-id="SMS" class="button small">Send SMS</a></td>
      </tr>
      <tr>
-      <td>Michealangelo</td>
+      <td>Jon Stewart</td>
       <td><a href="#">(305)555-4444</a></td>
       <td>April 13th</td>
       <td>12:30pm</td>
       <td><a href="#" class="button small">Click to call</a></td>
+      <td><a href="Javascript:void(0)" data-reveal-id="SMS" class="button small">Send SMS</a></td>
      </tr>
      <tr>
-      <td>Michealangelo</td>
+      <td>Pitbull</td>
       <td><a href="#">(305)555-4444</a></td>
       <td>April 13th</td>
       <td>12:30pm</td>
       <td><a href="#" class="button small">Click to call</a></td>
+      <td><a href="Javascript:void(0)" data-reveal-id="SMS" class="button small">Send SMS</a></td>
      </tr>
      <tr>
-      <td>Michealangelo</td>
+      <td>John Smith</td>
       <td><a href="#">(305)555-4444</a></td>
       <td>April 13th</td>
       <td>12:30pm</td>
       <td><a href="#" class="button small">Click to call</a></td>
+      <td><a href="Javascript:void(0)" data-reveal-id="SMS" class="button small">Send SMS</a></td>
      </tr>
     </tbody>
   </table>
@@ -71,7 +75,7 @@ $this->breadcrumbs=array(
       <td>Time</td>
      </td>
      <tr>
-      <td>Michealangelo</td>
+      <td>Martha Stewart</td>
       <td><a href="#">(305)555-4444</a></td>
       <td>April 13th</td>
       <td>12:30pm</td>
@@ -136,9 +140,18 @@ $this->breadcrumbs=array(
   <!-- Footer -->
 
 <!-- Modal for New Patient --> 
+<div id="SMS" class="reveal-modal large">
+
+  <iframe src="appointment/notify"  width="400" height="400" frameborder="0">
+    
+  </iframe>
+  <a class="close-reveal-modal">&#215;</a>
+</div>  
+
+<!-- Modal for New Patient --> 
 <div id="newPatient" class="reveal-modal small">
         <form action="">
-          <h2>New Patient</h2>
+          <h2>Your Data</h2>
           <input type="text" placeholder="Name">
           <input type="text" placeholder="Phone number">
           <input type="submit" value="Add Patient" class="button">
