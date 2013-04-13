@@ -4,17 +4,11 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
+	<meta name="viewport" content="width=device-width" />
 
-	<!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-	<![endif]-->
-
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
-
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css" media="screen, projector, print">
+	<link rel="stylesheet" type="text/css" href="./css/app.css" media="screen, projector, print">
+	
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
@@ -52,6 +46,40 @@
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?>
 	</div><!-- footer -->
+<script src="./javascripts/vendor/jquery.js"></script>
+  
+  <script src="javascripts/foundation/foundation.js"></script>
+  
+  <script src="javascripts/foundation/foundation.alerts.js"></script>
+  
+  <script src="javascripts/foundation/foundation.clearing.js"></script>
+  
+  <script src="javascripts/foundation/foundation.cookie.js"></script>
+  
+  <script src="javascripts/foundation/foundation.dropdown.js"></script>
+  
+  <script src="javascripts/foundation/foundation.forms.js"></script>
+  
+  <script src="javascripts/foundation/foundation.joyride.js"></script>
+  
+  <script src="javascripts/foundation/foundation.magellan.js"></script>
+  
+  <script src="javascripts/foundation/foundation.orbit.js"></script>
+  
+  <script src="javascripts/foundation/foundation.placeholder.js"></script>
+  
+  <script src="javascripts/foundation/foundation.reveal.js"></script>
+  
+  <script src="javascripts/foundation/foundation.section.js"></script>
+  
+  <script src="javascripts/foundation/foundation.tooltips.js"></script>
+  
+  <script src="javascripts/foundation/foundation.topbar.js"></script>
+  
+  
+  <script>
+    $(document).foundation();
+  </script>
 
 </div><!-- page -->
 
