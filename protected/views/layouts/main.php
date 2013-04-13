@@ -14,13 +14,13 @@
 
 <body>
 
-<div class="container" id="page">
+<div class="row" id="page">
 
-	<div id="header" class="row">
-		<div id="logo" class="three columns small-centered"><img src="http://placehold.it/200x100&text=logo" alt=""><span style="display:none"><?php echo CHtml::encode(Yii::app()->name); ?></span></div>
+	<div id="header">
+		<div id="logo" class="small-3 small-centered columns"><img src="http://placehold.it/200x100&text=logo" alt=""><span style="display:none"><?php echo CHtml::encode(Yii::app()->name); ?></span></div>
 	</div><!-- header -->
 
-	<div id="mainmenu">
+	<div id="mainmenu" class="large-12 columns">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
@@ -38,12 +38,11 @@
 	<?php echo $content; ?>
 
 	<div class="clear"></div>
-
-	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
+<div class="row">
+		<div id="footer" class="small-6 small-centered columns">
+		Copyright &copy; <?php echo date('Y'); ?> by us dudes.  All Rights Reserved. <?php echo Yii::powered(); ?>
 	</div><!-- footer -->
+<<<<<<< HEAD
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/javascripts/vendor/jquery.js"></script>
   
   <script src="<?php echo Yii::app()->request->baseUrl; ?>javascripts/foundation/foundation.js"></script>
@@ -74,6 +73,13 @@
   
   <script src="javascripts/foundation/foundation.topbar.js"></script>
   
+=======
+</div>
+
+<script src="./javascripts/vendor/jquery.js"></script>
+  
+  <script src="javascripts/foundation/foundation.min.js"></script>
+>>>>>>> Switched javascripts and made layout changes to main
   
   <script>
     $(document).foundation();
